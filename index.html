@@ -1,0 +1,428 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Joyalukas</title>
+	<link rel="icon" href="images/download.png" type="image/png"/>
+	
+<link rel="stylesheet" href="style.css" type="text/css"/>
+	 <!-- Owl Stylesheets -->
+	<link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
+
+	<script src="assets/vendors/jquery.min.js"></script>
+	<script src="assets/owlcarousel/owl.carousel.js"></script>
+	<script src="https://kit.fontawesome.com/42d6c79ed8.js" crossorigin="anonymous"></script>
+	
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet" type="text/css">
+	
+	
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
+<style>
+
+
+.photo_slider {
+  position : relative;
+  display : block;
+  overflow : hidden;
+  width : 100%;
+  max-width : 100vw;
+  height : 100vh;
+  max-height : 100%;
+  margin : 0 auto;
+}
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: 0;
+  transition: transform 1600ms;
+  transform: scale(1);
+}
+
+/* Slider images */  
+
+
+.slide_img_01 {
+  background : url('https://source.unsplash.com/1600x900/?diamonds') no-repeat center;
+  background-size: cover;
+  left: 0;
+}
+
+.slide_img_02 {
+  background : url('https://source.unsplash.com/1600x900/?jewelry') no-repeat center;
+  background-size : cover;
+  left: 100%
+}
+
+/* Next and Prev arrow */ 
+
+
+.control {
+  position: absolute;
+  top: 50%;
+  margin-top: -24px;
+  z-index: 55;
+}
+
+.control label svg {
+  width : 48px;
+  height : 48px;
+  fill : #fff;
+  stroke : currentColor;
+  stroke-width : 0;
+}
+
+.control label svg:hover {
+  transition : all .2s ease;
+  fill : #000;
+}
+
+.control label {
+  z-index: 0;
+  display: none;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.control label:hover { opacity: 1.0; }
+
+.next { right: 1%; }
+
+.previous { left: 1%; }
+
+/* Slider Pagger */ 
+
+
+.slider-pagination {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+.slider-pagination label {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  margin: 0 2px;
+  border: solid 1px rgba(255,255,255,0.4);
+  cursor: pointer;
+}
+
+/* Slider Pagger arrow event */
+
+
+.slide-radio1:checked ~ .next .numb2, .slide-radio2:checked ~ .next .numb1, .slide-radio2:checked ~ .previous .numb1, .slide-radio1:checked ~ .previous .numb2 {
+  display: block;
+  z-index: 1
+}
+
+/* Slider Pagger event */
+
+
+.slide-radio1:checked ~ .slider-pagination .page1, .slide-radio2:checked ~ .slider-pagination .page2 { background: rgba(255,255,255,1) }
+
+/* Slide effect */
+
+
+.slide-radio1:checked ~ .slider { transform: translateX(0%); }
+
+.slide-radio2:checked ~ .slider { transform: translateX(-100%); }
+
+/*	Slider Mobile	====================================================================================== */
+
+@media only screen and (max-width: 767px) {
+
+.photo_slider {
+  position : relative;
+  width : 100%;
+  height : 400px;
+}
+
+.slider > div { padding: 0 2% }
+
+.control {
+  position: absolute;
+  top: 60%;
+  margin-top: -24px;
+  z-index: 55;
+}
+
+.control label svg {
+  width : 32px;
+  height : 32px;
+  fill : #fff;
+  stroke : currentColor;
+  stroke-width : 0;
+}
+}
+</style>
+</head>
+
+<body>
+	<!--header starts-->
+	<div class="mainheader">
+	<div class="head">
+		<div class="exhead">Exclusive<br>Gold Collections<br><button class="click">Click Here</button></div>
+		
+			
+		
+		
+			
+		
+<div class="photo_slider">
+	
+	<div class="mainlink">
+		<div class="head1">JOYALUKAS</div>
+		<div class="head2">
+		<ul class="bfs">
+			<li>Gold</li>
+			<li>Diamond</li>
+			<li>Silver</li>
+			<li>Platinum</li>
+			<li class="cart">
+				<center><a href="#" title="Cart (0)" data-toggle="popover" data-placement="bottom" data-content="No item selected">
+				<i class="fas fa-cart-plus" style="color:white"></i>
+			</a></center>
+			</li>
+			</ul>
+		</div>
+		</div>
+  <input type="radio" name="slider" class="slide-radio1" checked id="slider_1">
+  <input type="radio" name="slider" class="slide-radio2" id="slider_2">
+  <div class="slider-pagination">
+    <label for="slider_1" class="page1"></label>
+    <label for="slider_2" class="page2"></label>
+  </div>
+  <div class="next control">
+    <label for="slider_1" class="numb1"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+      <path d="M298.3 256L131.1 81.9c-4.2-4.3-4.1-11.4.2-15.8l29.9-30.6c4.3-4.4 11.3-4.5 15.5-.2L380.9 248c2.2 2.2 3.2 5.2 3 8.1.1 3-.9 5.9-3 8.1L176.7 476.8c-4.2 4.3-11.2 4.2-15.5-.2L131.3 446c-4.3-4.4-4.4-11.5-.2-15.8L298.3 256z"/>
+      </svg> </label>
+    <label for="slider_2" class="numb2"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+      <path d="M298.3 256L131.1 81.9c-4.2-4.3-4.1-11.4.2-15.8l29.9-30.6c4.3-4.4 11.3-4.5 15.5-.2L380.9 248c2.2 2.2 3.2 5.2 3 8.1.1 3-.9 5.9-3 8.1L176.7 476.8c-4.2 4.3-11.2 4.2-15.5-.2L131.3 446c-4.3-4.4-4.4-11.5-.2-15.8L298.3 256z"/>
+      </svg> </label>
+  </div>
+  <div class="previous control">
+    <label for="slider_1" class="numb1"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+      <path d="M213.7 256L380.9 81.9c4.2-4.3 4.1-11.4-.2-15.8l-29.9-30.6c-4.3-4.4-11.3-4.5-15.5-.2L131.1 247.9c-2.2 2.2-3.2 5.2-3 8.1-.1 3 .9 5.9 3 8.1l204.2 212.7c4.2 4.3 11.2 4.2 15.5-.2l29.9-30.6c4.3-4.4 4.4-11.5.2-15.8L213.7 256z"/>
+      </svg> </label>
+    <label for="slider_2" class="numb2"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+      <path d="M213.7 256L380.9 81.9c4.2-4.3 4.1-11.4-.2-15.8l-29.9-30.6c-4.3-4.4-11.3-4.5-15.5-.2L131.1 247.9c-2.2 2.2-3.2 5.2-3 8.1-.1 3 .9 5.9 3 8.1l204.2 212.7c4.2 4.3 11.2 4.2 15.5-.2l29.9-30.6c4.3-4.4 4.4-11.5.2-15.8L213.7 256z"/>
+      </svg> </label>
+  </div>
+  <div class="slider slide_img_01"></div>
+  <div class="slider slide_img_02"></div>
+</div>
+		
+		
+		<!--slider end-->
+		
+		
+		
+
+			
+	</div>	
+		
+	</div>
+	<!--header completed-->
+	<!---banner starts-->
+		<div class="heading"><h1>POPULAR COLLECTIONS</h1></div>
+	<div class="banner">
+	<!--slide-->
+		
+		 <div class="row">
+      <div class="large-12 columns">
+        
+        <div class="owl-carousel">
+          <div class="item">
+      	<div class="bannerin1">
+	
+		<div class="box"><img src="images/image4.jpg" width="100%"/></div>
+		<div class="text"><center>Chain</center></div>
+		</div>
+          </div>
+			
+			
+		  <div class="item">
+			  	<div class="bannerin2">
+		<div class="box1"><img src="images/image3.jpg" width="100%"/></div>
+		<div class="text1"><center>Hand Chain</center></div>
+		</div>
+			</div>
+			
+			  <div class="item">
+			  <div class="bannerin3">
+			<div class="box2"><img src="images/image1.jpg" width="100%"/></div>
+			<div class="text2"><center>Ring</center></div>
+		</div>
+			</div>
+			
+			  <div class="item">
+			  
+		<div class="bannerin4">
+		<div class="box3"><img src="images/image2.jpg" width="100%"/></div>
+		<div class="text3"><center>Ear Ring</center></div></div>
+			</div>
+			
+		  </div>
+			 </div>
+			 
+		</div>
+		
+
+		
+		
+		
+	
+		
+	</div>
+	
+	
+
+	<!--banner completed-->
+	<!--body starts-->
+	<div class="heading1"><h1>MOST POPULAR</h1></div>
+	<div class="body">
+		 <div class="row">
+      <div class="large-12 columns">
+        
+        <div class="owl-carousel">
+          <div class="item">
+      
+	<div class="bodyin1">
+		<div class="bdybox"><center><img src="images/image11.jpg" style="width:50%"/></center></div>
+		<div class="bdytext"><h4>Austrian Diamond Choker Necklace</h4><br><span class="rupee">` </span>566565</div></div>
+			</div>
+			
+		  <div class="item">
+			  		<div class="bodyin2">
+		<div class="bdybox1"><center><img src="images/image9.jpg" style="width: 50%"/></center></div>
+		<div class="bdytext1"><h4>Perfect Ring Stack</h4><br><span class="rupee">` </span>654988</div>
+		</div>
+			  
+			  </div>
+			  <div class="item">
+			
+		<div class="bodyin3">
+		<div class="bdybox2"><center><img src="images/image13.jpg" style="width: 50%"/></center></div>
+		<div class="bdytext2"><h4>Kids Ear Ring</h4><br><span class="rupee">` </span>4663</div>
+		</div>
+	</div>
+			
+			  
+			</div>
+			
+		  </div>
+			 </div>
+	</div>
+			
+
+	<!--body ends-->
+	<div class="body1">
+		
+     <img src="images/banner1.jpg" width="100%">
+<div class="asa"><h1>AFFORDABLE<br> DIAMOND COLLECTIONS</h1></div>
+		<button class="shop">SHOP NOW</button>
+	</div>
+		<div class="heading2"><h1>NEW ARRIVALS</h1></div>
+	<div class="mainbanner">
+				 <div class="row">
+      <div class="large-12 columns">
+        
+        <div class="owl-carousel">
+          <div class="item">
+      	<div class="banner1">
+		<div class="bnrbox"><center><img src="images/image5.jpg" style="width: 50%"/></center></div>
+		<div class="bnrtext"> <h4>Tanishq Ankler Alloy</h4><br><span class="rupee">` </span>65546</div>
+		</div>
+          </div>
+			
+			
+		  <div class="item">
+			  	<div class="banner2">
+		<div class="bnrbox1"><center><img src="images/image10.jpg" style="width: 50%"/></center></div>
+		<div class="bnrtext1"><h4>Perfect Ring Stack</h4><br><span class="rupee">` </span>23456</div>
+		</div>
+			</div>
+			
+			  <div class="item">
+			  <div class="banner3">
+		<div class="bnrbox2"><center><img src="images/image8.jpg" style="width: 50%"/></center></div>
+		<div class="bnrtext2"><h4>Diamond Ear Ring</h4><br><span class="rupee">` </span>32455</div>
+		</div>
+			</div>
+			
+			
+			
+		  </div>
+			 </div>
+			 
+		</div>
+	
+		
+		 <script>
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+      margin: 40,
+      loop: true,
+		 autoplay: true,
+                    autoplayTimeout: 4000,
+                    autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  </script>
+		
+	</div>
+	<div class="footer">
+		<div class="footer1"><h4>About</h4><br>Privacy policy<br>Terms & conditions<br>Support Centre</div> 
+	<div class="footer2"><h4>Questions</h4><br>Help Support<br>Return<br>Shipping Info<br>History</div>
+		<div class="footer3"><h4>Usefull Links</h4><br>Gift Cards<br>Size Cards<br>My Account <br> Our Location</div>
+		<div class="mainfooter">
+		<div class="footer4"><img src="images/Icons App Store Google play.png" style="width: 100%"></div>
+		<div class="footer5"><h4>Connect With Us</h4><br><i class="fab fa-facebook-square facebook"></i>
+			<i class="fab fa-google-plus-square google"></i>
+			<i class="fab fa-youtube-square youtube"></i>
+			<i class="fab fa-instagram-square insta"></i>
+			<br><br><span>joyalukas567@gmail.com</span>
+			
+			</div>
+			
+			</div>
+		
+	</div>
+	<center><div class="copy">&copy; All Rights Reserved</div></center>
+<script>
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover();   
+});
+</script>
+</body>
+</html>

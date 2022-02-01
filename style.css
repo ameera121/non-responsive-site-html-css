@@ -1,0 +1,490 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0
+}
+/* header starts */
+.mainheader{
+	width: auto;
+	height: auto;
+		
+}
+.head{
+	
+	width:100%;	
+	height:650px;
+	background: url("images/1.jpg") no-repeat;
+	background-size:cover;
+box-sizing: border-box;
+	
+	color: white;
+	font-family: italic;	
+}
+@font-face{
+	font-family:italic;
+	src: url("Blenda Script/Blenda Script.otf")
+}
+.exhead{
+	    font-size: 101px;
+    position: absolute;
+    top: 250px;
+    z-index: 999;
+    left: 28%;
+    text-align: center;
+	    text-shadow: -1px 2px 16px #00000063;
+}
+.click{
+	width: 150px;
+	height: 60px;
+	font-size: 20px;
+	border: none;
+	font-family: bold
+}
+.mainlink{display: flex;
+position:relative;
+z-index: 999;}
+.head1{
+	
+	height: 10px;
+	padding: 40px;
+	margin: 10px;
+	color: white;
+	font-family: bold;
+	font-size: 30px;
+	cursor: pointer
+}
+@font-face{
+	font-family:bold;
+	src: url("dolce-vita/Dolce Vita Heavy Bold.ttf")
+}
+
+.head2{
+	background:none;
+	height: 10px;
+	padding: 40px;
+	margin: 10px;
+	flex-basis:86%;
+	font-family: light
+}
+.bfs{
+list-style: none;
+	color: white;
+	
+}
+.bfs li{
+	float: left;
+	padding-left: 10%;
+	font-family: light;
+	cursor: pointer;
+	
+}
+.cart{
+	font-size: 25px;
+	margin: 0% 0% 0% 25%;
+	cursor: pointer;
+	color: white
+}
+	
+
+/*--header completed--*/
+/*--banner starts--*/
+.banner{
+	display: flex;
+	height: auto;
+	width: 100%;
+	background:#FFFFFF;
+	box-sizing:border-box;
+	justify-content:space-between;
+	padding: 5% 125px 0% 83px;
+	overflow: hidden
+	
+}
+.heading{
+	background:#FFFFFF;
+	height: 20px;
+	width: 90%;
+	text-align: center;
+	padding: 3%;
+	font-family: bold
+}
+@font-face{
+	font-family:bold;
+	src:url("dolce-vita/Dolce Vita Heavy Bold.ttf")
+}
+.bannerin1{
+	background: #FFFFFF;
+
+	flex-basis: 200px;
+	
+}
+.box{
+	
+
+	
+
+}
+.text{
+	background: #FFFFFF;
+	padding:10% 0%;
+	font-family: light
+}
+@font-face{
+	font-family: light;
+	src:url("Poppins/Poppins-Light.ttf")
+}
+.bannerin2{
+
+background: #FFFFFF;
+	flex-basis: 200px;
+
+}
+.box1{
+	
+	
+}
+.text1{
+background: #FFFFFF;
+	padding:10% 0%	;
+	font-family: light
+}
+@font-face{
+	font-family: light;
+	src:url("Poppins/Poppins-Light.ttf")
+}
+.bannerin3{
+	background: #FFFFFF;
+	flex-basis: 216px;
+	
+}
+.box2{
+	
+	
+}
+.text2{
+	background: #FFFFFF;
+	padding:10% 0%;
+	font-family: light
+}
+@font-face{
+	font-family: light;
+	src:url("Poppins/Poppins-Light.ttf")
+}
+.bannerin4{
+		
+	background: #FFFFFF;
+	flex-basis: 200px;
+	
+}
+.box3{
+	
+
+}
+.text3{
+	background: #FFFFFF;
+	padding:10% 0%;
+	font-family: light
+}
+@font-face{
+	font-family:light;
+	src:url("Poppins/Poppins-Light.ttf")
+}
+/*--banner completed--*/
+/*--body starts--*/
+.heading1{
+	background:#FFFFFF;
+	height: 20px;
+	width: 96%;
+	text-align: center;
+	padding: 1%;
+	font-family: bold
+}
+@font-face{
+	font-family: bold;
+	src: url("dolce-vita/Dolce Vita Heavy Bold.ttf")
+}
+.body{
+		display: flex;
+	height: auto;
+	width: 100%;
+	background:#FFFFFF;
+	box-sizing: border-box;
+	justify-content: space-around;
+	padding: 05% 0px 8% 60px;
+	overflow: hidden;
+	
+}
+.bodyin1{
+	background: #FFFFFF;
+	flex-basis: 400px;
+}
+.bdybox{
+	width: 100%
+}
+.bdytext{
+	background: #FFFFFF;
+	padding: 5% 17%;
+	text-align: center;
+	font-family:light
+}
+.bodyin2{
+	background: #FFFFFF;
+	flex-basis: 400px;
+}
+.bdybox1{
+	width: 100%
+}
+.bdytext1{
+	background: #FFFFFF;
+	padding: 5% ;
+	text-align: center;
+	font-family:light
+	
+}
+.bodyin3{
+	background: #FFFFFF;
+	flex-basis: 400px;
+}
+.bdybox2{
+	width: 100%
+}
+.bdytext2{
+	background: #FFFFFF;
+	padding: 5% ;
+	text-align: center;
+	font-family:light 
+}
+.heading2{
+		background:#FFFFFF;
+	height: 20px;
+	width: 96%;
+	text-align: center;
+	padding: 2%;
+	font-family: bold
+}
+@font-face{
+	font-family: bold;
+	src: url("dolce-vita/Dolce Vita Heavy Bold.ttf")
+}
+.body1{
+	
+		width: auto;
+	height:750px; 
+	background-size: cover;
+	overflow: hidden;
+box-sizing: border-box;
+	
+	
+}
+.asa{
+	width: 100%;
+	height: 100px;
+	background:rgba(0,0,0,.8); 
+	position:relative;
+	top: -520px;
+	color:white;
+	text-align: center;
+	padding: 36px 0% 9% 0%;
+	font-family: bold;
+	font-size: 29px
+}
+@font-face{
+	font-family: bold;
+	src: url("dolce-vita/Dolce Vita Heavy Bold.ttf")
+}
+.shop{
+background: rgba(15,34,7,1.00);
+	color:white;
+	left:45%;
+	top:-460px;
+	position: relative;
+	width:150px;
+	height: 50px;
+	font-family: bold;
+	font-size: 20px
+
+}
+@font-face{
+	font-family: bold;
+	src: url("dolce-vita/Dolce Vita Heavy Bold.ttf")
+}
+/*--mainbanner starts--*/
+.mainbanner{
+	display: flex;
+	height: auto;
+	width: 100%;
+	background:#FFFFFF;
+	box-sizing: border-box;
+	justify-content: space-around;
+	padding: 05% 0px 8% 2px;
+	overflow: hidden
+	
+}
+.banner1{
+	background: #FFFFFF;
+	flex-basis: 200px;
+
+}
+.bnrbox{
+	width:100% 
+}
+.bnrtext{
+	background: #FFFFFF;
+	padding: 5% 19%;
+	text-align: center;
+	font-family: light;
+	
+}
+.rupee{
+	font-family: rupee
+}
+@font-face{
+	font-family: rupee;
+	src: url("rupee-foradian/Rupee_Foradian.ttf")
+}
+.banner2{
+	background: #FFFFFF;
+	flex-basis: 200px;
+
+}
+.bnrbox1{
+	width:  100%
+}
+.bnrtext1{
+	background: #FFFFFF;
+	padding: 5% 20%;
+	text-align: center;
+	font-family: light
+}
+.banner3{
+	background: #FFFFFF;
+	flex-basis: 200px;
+
+}
+.bnrbox2{
+	width: 100%
+}
+.bnrtext2{
+		background: #FFFFFF;
+	padding: 5% 22%;
+	text-align: center;
+	font-family: light
+}
+/*--mainbanner ends--*/
+.footer{
+
+		width: 100%;
+	height:200px;
+	background:#FFFFFF;
+box-sizing: border-box;
+	padding: 0% 5% 0% 5%
+}
+
+.footer1{
+	float: left;
+	padding: 10px 12% 10px 5%;
+	font-family: light;
+	line-height: 25px
+}
+@font-face{
+	font-family:light;
+	src: url("Poppins/Poppins-Light.ttf")
+}
+.footer2{
+		float: left;
+	padding: 10px 12% 10px 0%;
+	font-family: light;
+	line-height: 25px
+}
+@font-face{
+	font-family:light;
+	src: url("Poppins/Poppins-Light.ttf")
+}
+.footer3{
+	float: left;
+	padding: 10px 8% 10px 0%;
+	font-family: light;
+line-height: 25px
+}
+@font-face{
+	font-family:light;
+	src: url("Poppins/Poppins-Light.ttf")
+}
+.mainfooter{
+	display: flex;
+	
+}
+.footer4{
+
+		flex-basis: 200px;
+	padding: 22px 12% 91px 0%;
+	
+}
+.footer5{
+	float: left;
+	padding: 10px 12% 39px 3%;
+	font-family: light;
+	line-height: 25px
+}
+@font-face{
+	font-family:light;
+	src: url("Poppins/Poppins-Light.ttf")
+}
+
+.facebook{
+	font-size: 30px;
+
+
+}
+
+.google{
+	font-size: 30px
+}
+.youtube{
+	font-size: 30px
+}
+.insta{
+	font-size: 30px
+}
+.copy{
+	background:rgba(17,16,16,1.00);
+	width: 100%;
+	margin-top: 10px;
+	color: white;
+	padding: 10px 0px 10px 0px;
+	font-family: thin
+}
+@font-face{
+	font-family: thin;
+	src:url("Poppins/Poppins-Thin.ttf")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
